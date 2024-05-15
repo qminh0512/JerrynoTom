@@ -212,7 +212,7 @@ int main(int argc, char *argv[]) {
         }
         SDL_Delay(10);
     }
-
+// Release the data and exit
     Mix_FreeChunk(eatSound);
     Mix_FreeChunk(deadSound);
     SDL_DestroyTexture(gameOverTexture);
