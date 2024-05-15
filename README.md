@@ -13,13 +13,16 @@ Ngô Thị Tâm - 23020568
   [linkvideo](https://www.youtube.com/watch?v=CN5traPBbyM)
 - How to play:
 -  Press the Enter key to start the game.
+  
   ![Screenshot 2024-05-15 115510](https://github.com/Tran8811/JerrynoTom/assets/140888846/72259d86-5c12-4700-8cca-3ef6ec27e234)
 
 -  Use the arrow keys to move Jerry the mouse and collect cheese pieces. Each cheese piece collected scores 1 point. The highest score is recorded.
+  
   ![Screenshot 2024-05-15 115525](https://github.com/Tran8811/JerrynoTom/assets/140888846/0d67217a-8ce9-4fb9-9dd7-2fdfbde5e68a)
 
 - Jerry's speed gradually increases.
 - The game ends when Jerry moves off the screen.
+  
   ![Screenshot 2024-05-15 115535](https://github.com/Tran8811/JerrynoTom/assets/140888846/69be7bf7-6afa-4dcc-9582-39f80b430dd5)
 
 ## 2.Main :
