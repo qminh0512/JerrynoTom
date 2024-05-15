@@ -26,7 +26,7 @@ Ngô Thị Tâm - 23020568
 - Object System: Mouse (Jerry), cheese.
 - Sound System: Various game sounds.
 - Graphics: Simple and attractive, easy-to-play mechanics, scoring, and high score tracking to motivate players.
-- 
+  
 ## Implemented Features:
 - Sound Effects: For starting the game and when Jerry eats cheese.
 - Gameplay Functions: Menu, keyboard interactions.
