@@ -8,12 +8,19 @@ Ngô Thị Tâm - 23020568
 
 ## 1.Mô tả chung về trò chơi
 - Tên trò chơi: JerrrynoTom
-- Demo: 
+- Demo:
+  [linkvideo](https://www.youtube.com/watch?v=CN5traPBbyM)
 - Cách chơi:
 -  Nhấn phím enter để bắt đầu vào trò chơi
+-  ![Screenshot 2024-05-15 115510](https://github.com/Tran8811/JerrynoTom/assets/140888846/15578a3a-8b77-4b4a-a57d-ae888f89fcbd)
+
 -  Dùng các nút mũi tên để di chuyển chuột theo ý muốn và ăn các miếng phô mát, mỗi lần ăn được sẽ được tính 1 điểm, điểm cao nhất sau mỗi lần chơi sẽ đượ lưu lại.
+  ![Screenshot 2024-05-15 115525](https://github.com/Tran8811/JerrynoTom/assets/140888846/0d67217a-8ce9-4fb9-9dd7-2fdfbde5e68a)
+
 -  Tốc độ của Jerry sẽ được tăng dần lên
 -  Trò chơi kết thúc khi chuột bị ra khỏi màn hình game
+  ![Screenshot 2024-05-15 115535](https://github.com/Tran8811/JerrynoTom/assets/140888846/b7db5dff-b199-4b78-b1ca-134ed74edf25)
+
 ## 2.Các ý tưởng chính:
 - Hệ thống các đối tượng: Chuột, phô mai
 - Hệ thống âm thanh
