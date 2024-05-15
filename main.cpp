@@ -35,7 +35,7 @@ int main(int argc, char *argv[]) {
         }
         if (event.type == SDL_KEYDOWN) {
             if (event.key.keysym.sym == SDLK_RETURN || event.key.keysym.sym == SDLK_KP_ENTER) {
-                enterPressed = true; // Đánh dấu enter đã được nhấn
+                enterPressed = true; // Danh dau enter da duoc nhannhan
             }
         }
 
