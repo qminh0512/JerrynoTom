@@ -1,0 +1,69 @@
+# depslib dependency file v1.0
+1715489634 source:c:\users\admin\downloads\main.cpp
+	<iostream>
+	<SDL.h>
+	<SDL_ttf.h>
+	"graphics.h"
+	"defs.h"
+	"game.h"
+
+1715422193 c:\users\admin\downloads\graphics.h
+	<SDL.h>
+	<SDL_image.h>
+	"defs.h"
+
+1715422193 c:\users\admin\downloads\defs.h
+	<SDL.h>
+	<SDL_image.h>
+	<iostream>
+	<Windows.h>
+	<stdlib.h>
+
+1715485338 c:\users\admin\downloads\game.h
+
+1715734592 source:c:\users\admin\desktop\game\main.cpp
+	<iostream>
+	<fstream>
+	<SDL.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"graphics.h"
+	"defs.h"
+	"game.h"
+	"score.h"
+	"window.h"
+	"menu.h"
+
+1715734592 c:\users\admin\desktop\game\graphics.h
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_mixer.h>
+	"defs.h"
+
+1715422193 c:\users\admin\desktop\game\defs.h
+	<SDL.h>
+	<SDL_image.h>
+	<iostream>
+	<Windows.h>
+	<stdlib.h>
+
+1715675049 c:\users\admin\desktop\game\game.h
+
+1715498685 c:\users\admin\desktop\game\score.h
+	<iostream>
+	<SDL.h>
+	<SDL_ttf.h>
+	"graphics.h"
+	"defs.h"
+	<string>
+
+1715660185 c:\users\admin\desktop\game\window.h
+	<SDL.h>
+
+1715624099 c:\users\admin\desktop\game\menu.h
+	<SDL.h>
+	<SDL_ttf.h>
+	<string>
+	<SDL.h>
+	<SDL_ttf.h>
+
