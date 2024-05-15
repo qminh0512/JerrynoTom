@@ -31,3 +31,6 @@ Ngô Thị Tâm - 23020568
 - Xử lý va chạm, tăng tốc (10s 1 lần)...
 
 ## Các nguồn tài liệu tham khảo
+- Lazy Foo
+- [theTruth777 MenuCPP(menu game)](https://github.com/theTruth777/MenuCPP)
+- [Cô Trần Thị Minh Châu](https://docs.google.com/document/d/1FZ3jTqHxtyZznNWiJmmve0zYu_aSliUqLP2OsMcdehQ/edit?fbclid=IwZXh0bgNhZW0CMTAAAR0mitgAIddxXfdFHZKLekVY2A_du-aXMuoxP2oKoYVcRuNr5hyh2DRWkoI_aem_Acd_nbzjQBbQqLfIM8gZf4SEIN8RUFczgqOEh5KPfxkcqEQSu-wQsCIpIz6PHze9hJUYRTgM48vYLbIvmbd4va1M)
