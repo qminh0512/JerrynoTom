@@ -35,7 +35,7 @@ int main(int argc, char *argv[]) {
         }
         if (event.type == SDL_KEYDOWN) {
             if (event.key.keysym.sym == SDLK_RETURN || event.key.keysym.sym == SDLK_KP_ENTER) {
-                enterPressed = true; // Mark that Enter key has been pressed
+                enterPressed = true; // Đánh dấu enter đã được nhấn
             }
         }
 
@@ -48,7 +48,6 @@ int main(int argc, char *argv[]) {
     engineMenu.quitSplashScreen();
     appWindow.destroyWindow();
 
-    // Initialize SDL and SDL_ttf
     SDL_Init(SDL_INIT_VIDEO);
     TTF_Init();
 
@@ -75,7 +74,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    int currentDirection = 0; // 0: phải, 1: trái, 2: lên, 3: xuốngxuống
+    int currentDirection = 0; // 0: phải, 1: trái, 2: lên, 3: xuống
 
     Mouse mouse(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2);
     Cheese cheese(100, 100);
@@ -166,12 +165,12 @@ int main(int argc, char *argv[]) {
         SDL_Delay(10);
     }
 
-    // Free resources before creating the game over window
+ 
     SDL_DestroyTexture(cheeseTexture);
     SDL_DestroyTexture(backgroundTexture);
     TTF_CloseFont(font);
 
-    // Create Game Over Window
+    // Tạo cửa sổ gameover
     EngineWindow gameOverWindow;
     gameOverWindow.createWindow("Game Over", 800, 600);
     SDL_RenderClear(gameOverWindow.renderer);
@@ -188,7 +187,7 @@ int main(int argc, char *argv[]) {
     // Gameover
     Mix_Chunk* deadSound = graphics.loadSound("dead.wav");
     graphics.play(deadSound);
-    SDL_Color textColor = {255, 255, 255, 255}; // White color
+    SDL_Color textColor = {255, 255, 255, 255}; 
     SDL_Surface* gameOverSurface = TTF_RenderText_Solid(gameOverFont, "Game Over", textColor);
     SDL_Texture* gameOverTexture = SDL_CreateTextureFromSurface(gameOverWindow.renderer, gameOverSurface);
 
@@ -196,7 +195,7 @@ int main(int argc, char *argv[]) {
     int textHeight = gameOverSurface->h;
     SDL_FreeSurface(gameOverSurface);
 
-    SDL_Rect textRect = {400 - textWidth / 2, 300 - textHeight / 2, textWidth, textHeight}; // Centered in the window
+    SDL_Rect textRect = {400 - textWidth / 2, 300 - textHeight / 2, textWidth, textHeight};
 
     SDL_RenderCopy(gameOverWindow.renderer, gameOverTexture, NULL, &textRect);
     SDL_RenderPresent(gameOverWindow.renderer);
