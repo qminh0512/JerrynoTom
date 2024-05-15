@@ -26,7 +26,7 @@ int main(int argc, char *argv[]) {
 
     Graphics graphics;
 
-    bool enterPressed = false; // Variable to check if Enter key is pressed
+    bool enterPressed = false; 
 
     while (!quit && !enterPressed) {
         SDL_PollEvent(&event);
@@ -75,7 +75,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    int currentDirection = 0; // 0: right, 1: left, 2: up, 3: down
+    int currentDirection = 0; // 0: phải, 1: trái, 2: lên, 3: xuốngxuống
 
     Mouse mouse(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2);
     Cheese cheese(100, 100);
@@ -88,14 +88,14 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    int score = 0; // Variable to store the score
-    int highestScore = 0; // Variable to store the highest score
+    int score = 0; // Điểm số
+    int highestScore = 0; // Điểm cao nhất
     ifstream inFile("highestscore.txt");
     if (inFile.is_open()) {
         inFile >> highestScore;
         inFile.close();
     }
-
+//Âm thanh lúc ăn cheese
     Mix_Chunk* eatSound = graphics.loadSound("eat.wav");
 
     while (!quit && !gameOver(mouse)) {
@@ -109,19 +109,19 @@ int main(int argc, char *argv[]) {
 
         if (currentKeyStates[SDL_SCANCODE_UP]) {
             mouse.turnNorth();
-            currentDirection = 2; // Change direction to up
+            currentDirection = 2; 
         }
         if (currentKeyStates[SDL_SCANCODE_DOWN]) {
             mouse.turnSouth();
-            currentDirection = 3; // Change direction to down
+            currentDirection = 3; 
         }
         if (currentKeyStates[SDL_SCANCODE_LEFT]) {
             mouse.turnWest();
-            currentDirection = 1; // Change direction to left
+            currentDirection = 1; 
         }
         if (currentKeyStates[SDL_SCANCODE_RIGHT]) {
             mouse.turnEast();
-            currentDirection = 0; // Change direction to right
+            currentDirection = 0; 
         }
 
         std::string mouseTexturePath;
@@ -146,10 +146,10 @@ int main(int argc, char *argv[]) {
             cheese.respawn();
             mouse.grow();
             graphics.play(eatSound);
-            score++; // Increase score when cheese is eaten
+            score++; // Tăng điểm khi ăn
             if (score > highestScore) {
-                highestScore = score; // Update highest score if current score exceeds highest score
-                // Save highest score to file
+                highestScore = score; // Cập nhật lại điểm
+                // Lưu điểm cao nhất
                 ofstream outFile("highestscore.txt");
                 if (outFile.is_open()) {
                     outFile << highestScore;
@@ -185,7 +185,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    // Render Game Over message
+    // Gameover
     Mix_Chunk* deadSound = graphics.loadSound("dead.wav");
     graphics.play(deadSound);
     SDL_Color textColor = {255, 255, 255, 255}; // White color
